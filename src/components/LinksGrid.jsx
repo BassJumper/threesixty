@@ -55,7 +55,7 @@ LinksGrid.defaultProps = {
             imageUrl: "",
             url: "/existingclient",
             description:
-                "threesixty delivers support and personalised solutions to over 900 directly regulated IFA practices, including 100+ discretionary mgmt firms (more than 9,000 registered)."
+                "threesixty delivers support and personalised solutions to over 900 directly regulated IFA practices, including one hundred plus discretionary mgmt firms (more than 9,000 registered)."
         },
         {
             icon: "icofont-vehicle-delivery-van",

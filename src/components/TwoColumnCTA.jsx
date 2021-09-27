@@ -37,7 +37,7 @@ export class TwoColumnCTA extends Component {
 									{parse(this.props.content)}
 								</div>
 								<div className={"testimonial-cta-inner-block"}>
-									<h3>{this.props.ctaTitle} + {this.props.ctaUrl}</h3>
+									<h3>{this.props.ctaTitle}</h3>
 									<div>
 										{parse(this.props.ctaContent)}
 									</div>

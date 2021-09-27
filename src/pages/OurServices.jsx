@@ -52,7 +52,7 @@ class DummyPage extends Component {
                         {
                             icon: "icofont-test-tube-alt",
                             title: "Product research",
-                            content: "Extensive product and fund research actioned by our expert team so we can bring clarity to sometimes obsure policies and regulations.",
+                            content: "Extensive product and fund research actioned by our expert team so we can bring clarity to some obscure regulations.",
                             bgnumber: "5",
                             url: "/service"
                         },
