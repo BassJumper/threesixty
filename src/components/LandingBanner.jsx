@@ -192,7 +192,7 @@ HomeSlides.defaultProps = {
 
     homeslidesData: [
         {
-            bgImgClass: "main-banner item-bg-three",
+            bgImgClass: "main-banner item-bg-one",
             toptitle: "three sixty services",
             mainlefttitle: "COMPLIANCE AND",
             mainspantitle: "BUSINESS",
