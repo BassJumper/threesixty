@@ -57,8 +57,8 @@ Banner.propTypes = {
 };
 
 Banner.defaultProps = {
-    title: "Page Title",
-    description: "threesixty delivers support and personalised solutions to over 900 directly regulated IFA practices, including over 100 discretionary management firms – equating to more than 9,000 registered individuals",
+    title: "How art can lift our dampened spirits",
+    description: "It's been long understand that music, dancing and art in general provides us with some necessary distraction and elation from the sometimes relentless grind of day to day life. This is an important part of being human which we do not want to lose. Because - we love it!",
     ctaText: "Get in touch now",
     ctaUrl: "/contactus"
 };

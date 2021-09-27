@@ -47,7 +47,8 @@ a {
     outline: 0 !important;
     text-decoration: none !important;
     transition: 0.4s;
-    color: #cdb78e;
+    color: #ffddb1c2;
+    font-weight: 500;
 
     &:hover {
         color: #ffddb1;
@@ -101,6 +102,16 @@ button:focus {
         margin-top: 8px;
     }
 }
+.post-thumbnail {
+    overflow: hidden;
+    img {
+        transition: 0.8s;
+    }
+    &:hover img {
+        transform: scale(1.2);
+    }
+}
+
 .btn-signin {
     opacity: 0.3;
     margin-top: -2px;
@@ -395,6 +406,18 @@ Navbar Area CSS
                     &.active {
                         color: #ffddb1;
                     }
+                }
+
+                a {
+                    color: #cccdf1d9;
+
+                    &:hover {
+                        color: #ffddb1;
+                    }
+                }
+
+                &.active a {
+                    color: #ffddb1;
                 }
 
                 &.active .nav-link {
