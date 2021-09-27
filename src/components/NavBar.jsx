@@ -98,7 +98,7 @@ class NavBar extends Component {
                                        <a
                                             href="https://ci-portal-website.azurewebsites.net/"
                                             target="_blank"
-                                            className ={"btn btn-primary btn-signin animated fadeInDown slow opacityOne"}
+                                            className ={"btn btn-primary btn-signin opacityOne"}
                                         >
                                             Sign in
                                         </a>

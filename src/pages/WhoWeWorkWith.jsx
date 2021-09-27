@@ -16,8 +16,8 @@ class DummyPage extends Component {
                 <Banner 
                     title={"Who we work with"} 
                     description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."} 
-                    ctaText={"Optional Button"} 
-                    ctaUrl={"#"} />
+                    ctaText={"Contact Us"} 
+                    ctaUrl={"/contactus"} />
 
                 <LinksGrid 
                     title={"Lorem ipsum dolor sit amet, consectetur adipiscing elit."} 

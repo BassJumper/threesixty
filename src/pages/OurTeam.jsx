@@ -17,8 +17,8 @@ class DummyPage extends Component {
                 <Banner 
                     title={"Our team"} 
                     description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit sed ullamcorper morbi tincidunt ornare massa."} 
-                    ctaText={"Optional Button"} 
-                    ctaUrl={"#"} />
+                    ctaText={"Get in touch now"} 
+                    ctaUrl={"/contactus"} />
 
                 <TeamCarousel 
                      title="Our Team"
