@@ -472,7 +472,9 @@ Main Banner Area CSS
 button.modal-video-close-btn {
     cursor: pointer;
 }
-
+.site-version {
+    color: white;
+}
 .item-bg-one {
     background-image: url(../../assets/img/main-banner1.jpg);
     animation: fade 3s infinite;

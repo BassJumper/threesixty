@@ -2,7 +2,11 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 export class Footer extends Component {
+
   render() {
+
+    const version = "0.4.2";
+
     return (
         <>
         <footer className="footer-area">
@@ -83,7 +87,7 @@ export class Footer extends Component {
                                     </li>
                                     {/* TODO: Make the site version dynamic based on auto-incremented release number */}
                                     <li>
-                                        Site Ver 0.41
+                                        Site Ver {version}
                                     </li>
                                 </ul>
                             </div>
@@ -109,6 +113,10 @@ export class Footer extends Component {
                                     <a href={this.props.footercopyrightLink2}>
                                         {this.props.footercopyrightText2}
                                     </a>
+                                </li>
+                                {/* TODO: Make the site version dynamic based on auto-incremented release number */}
+                                <li className="site-version">
+                                    Site Ver {version}
                                 </li>
                             </ul>
                         </div>

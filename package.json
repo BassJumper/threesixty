@@ -1,6 +1,6 @@
 {
     "name": "react-threesixty",
-    "version": "1.1.0",
+    "version": "0.4.2",
     "private": true,
     "dependencies": {
         "animate.css": "^3.7.2",
