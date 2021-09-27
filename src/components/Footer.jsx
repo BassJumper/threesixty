@@ -5,7 +5,7 @@ export class Footer extends Component {
 
   render() {
 
-    const version = "0.4.3";
+    const version = "0.4.4";
 
     return (
         <>
