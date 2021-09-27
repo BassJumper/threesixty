@@ -81,9 +81,9 @@ export class Footer extends Component {
                                             Terms of website use
                                         </a>
                                     </li>
-                                    {/* TODO: Make the site version dynamic based on autoincremented release number */}
+                                    {/* TODO: Make the site version dynamic based on auto-incremented release number */}
                                     <li>
-                                        Site Ver 1.3
+                                        Site Ver 0.41
                                     </li>
                                 </ul>
                             </div>

@@ -328,7 +328,7 @@ class DummyPage extends Component {
 	                ctaTitle="Consecuterot adisping elit anm sit."
 	                ctaImage={null}
 	                ctaContent="<p>Sed utlerics edor facuibus risi malesuad consuectoreur</p><h4><b style='font-size: 40px; color: #040041;'>£150</b> per month</h4>"
-	                ctaLink="#"
+	                ctaUrl="#"
 	                ctaText="Our services"
                     alignCTALeft={true}
                 /> 
@@ -341,7 +341,7 @@ class DummyPage extends Component {
 	                ctaTitle="Consecuterot adisping elit anm sit."
 	                ctaImage={"main-banner3.jpg"}
 	                ctaContent="<p>Sed utlerics edor facuibus risi malesuad</p><p>Sal consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>"
-	                ctaLink="#"
+	                ctaUrl="#"
 	                ctaText="Our services"
                 /> 
                 

@@ -25,37 +25,43 @@ class DummyPage extends Component {
                             icon: "icofont-library",
                             title: "Online portal",
                             content: "Click here to get more info on our super cool super new Online Portal, developed in-house right here at threesixty.",
-                            bgnumber: "1"
+                            bgnumber: "1",
+                            url: "/service"
                         },
                         {
                             icon: "icofont-pen-alt-3",
                             title: "Risk assessments",
                             content: "Everything you need to know about risk assessments and much more can be found my clicking on this magic tile.",
-                            bgnumber: "2"
+                            bgnumber: "2",
+                            url: "/service"
                         },
                         {
                             icon: "icofont-graduate-alt",
                             title: "Training seminars",
                             content: "Come and learn with the best in the business at our Seminars.  Click for more info and our world wide schedule.",
-                            bgnumber: "3"
+                            bgnumber: "3",
+                            url: "/service"
                         },
                         {
                             icon: "icofont-headphone-alt-2",
                             title: "Helpdesk support",
                             content: "24/7 support available to our valued members.  Click right here right now to learn more about our pricing and offers.",
-                            bgnumber: "4"
+                            bgnumber: "4",
+                            url: "/service"
                         },
                         {
                             icon: "icofont-test-tube-alt",
                             title: "Product research",
                             content: "Extensive product and fund research actioned by our expert team so we can bring clarity to sometimes obsure policies and regulations.",
-                            bgnumber: "5"
+                            bgnumber: "5",
+                            url: "/service"
                         },
                         {
                             icon: "icofont-globe-alt",
                             title: "Events",
                             content: "Click here to go to our New Shiny EVENTS Management System - developed in-house at threesixty by our talented Developers.",
-                            bgnumber: "6"
+                            bgnumber: "6",
+                            url: "/service"
                         }
                     ]} 
                 />

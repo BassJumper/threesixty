@@ -61,37 +61,37 @@ class NavBar extends Component {
                             <Nav className="ml-auto">
                                 <Nav.Item>
                                     <li>
-                                        <a style={{padding: "0", color: "#f7debebd", fontSize:"15px", fontWeight:"500"}} href="/">Home</a>
+                                        <a href="/">Home</a>
                                     </li>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <li>
-                                        <a style={{padding: "0", color: "#f7debebd", fontSize:"15px", fontWeight:"500"}} href="/whoweworkwith">Who we are</a>
+                                        <a href="/whoweworkwith">Who we are</a>
                                     </li>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <li>
-                                        <a style={{padding: "0", color: "#f7debebd", fontSize:"15px", fontWeight:"500"}} href="/ourservices">Our services</a>
+                                        <a href="/ourservices">Our services</a>
                                     </li>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <li>
-                                        <a style={{padding: "0", color: "#f7debebd", fontSize:"15px", fontWeight:"500"}} href="/ourteam">Our Team</a>
+                                        <a href="/ourteam">Our Team</a>
                                     </li>
                                 </Nav.Item>
                                 <Nav.Item>
                                 <li>
-                                        <a style={{padding: "0", color: "#f7debebd", fontSize:"15px", fontWeight:"500"}} href="/whychooseus">Why choose us</a>
+                                        <a href="/whychooseus">Why choose us</a>
                                     </li>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <li>
-                                        <a style={{padding: "0", color: "#f7debebd", fontSize:"15px", fontWeight:"500"}} href="/blog">Blog</a>
+                                        <a href="/blog">Blog</a>
                                     </li>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <li>
-                                        <a style={{padding: "0", color: "#f7debebd", fontSize:"15px", fontWeight:"500"}} href="/contactus">Contact us</a>
+                                        <a href="/contactus">Contact us</a>
                                     </li>
                                 </Nav.Item>
                                 <Nav.Item>

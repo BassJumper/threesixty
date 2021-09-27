@@ -5,6 +5,7 @@ import PropTypes from "prop-types";
 import VisibilitySensor from "react-visibility-sensor";
 import "react-modal-video/css/modal-video.min.css";
 import ModalVideo from "react-modal-video";
+import { Link } from "react-scroll";
 
 class HomeSlides extends Component {
     constructor() {
@@ -14,7 +15,14 @@ class HomeSlides extends Component {
         };
         this.openModal = this.openModal.bind(this);
     }
-
+    scrollWithOffset(el, offset) {
+        const elementPosition = el.offsetTop - offset;
+        window.scroll({
+            top: elementPosition,
+            left: 0,
+            behavior: "smooth"
+        });
+    };
     openModal() {
         this.setState({ isOpen: true });
     }
@@ -35,8 +43,7 @@ class HomeSlides extends Component {
                                                         isVisible
                                                             ? "animated fadeInUp slow opacityOne"
                                                             : "opacityZero"
-                                                    }
-                                                >
+                                                    }>
                                                     {homeslides.mainlefttitle}{" "}
                                                     <span>
                                                         {
@@ -55,20 +62,20 @@ class HomeSlides extends Component {
                                                 >
                                                     {homeslides.content}
                                                 </p>
-                                                
-                                                <a
-                                                    href={
-                                                        homeslides.leftbtnlink
-                                                    }
+                                                <Link
+                                                    to="about"
                                                     className ={
                                                         isVisible
                                                             ? "btn btn-hero animated fadeInDown slow opacityOne"
                                                             : " btn opacityZero"
                                                     }
-                                                >
-                                                    {homeslides.leftbtn}
-                                                </a>
-                                                
+                                                    onClick={() => this.scrollWithOffset("about", "-70")}
+                                                    spy={true}
+                                                    smooth={true}
+                                                    offset={-70}
+                                                    duration={800}>
+                                                     {homeslides.leftbtn}
+                                                </Link>
                                                 <button onClick={this.openModal} className={
                                                         isVisible
                                                             ? "video-btn animated fadeInDown slow opacityOne"

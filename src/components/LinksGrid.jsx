@@ -10,17 +10,19 @@ class LinksGrid extends Component {
     render() {
         const items = this.props.items.map((item, index) =>( 
             <div className="col-lg-5 col-md-4 col-sm-12" key={index}>
-                <div className="single-box">
-                    <Icofont icon={item.icon} />
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                </div>
+                <a href={item.url}>
+                    <div className="single-box">
+                        <Icofont icon={item.icon} />
+                        <h3>{item.title}</h3>
+                        <p>{item.description}</p>
+                    </div>
+                </a>
             </div>
         ));
 
         return (
             <>
-              <section className="welcome-area ptb-100">
+              <section id="about" className="welcome-area ptb-100">
                     <div className="container">
                         <div className="section-title">
                             <h2><b>{this.props.title}</b></h2>
@@ -51,7 +53,7 @@ LinksGrid.defaultProps = {
             icon: "icofont-rocket-alt-2",
             title: "New start businesses",
             imageUrl: "",
-            url: "#",
+            url: "/existingclient",
             description:
                 "threesixty delivers support and personalised solutions to over 900 directly regulated IFA practices, including 100+ discretionary mgmt firms (more than 9,000 registered)."
         },
@@ -59,7 +61,7 @@ LinksGrid.defaultProps = {
             icon: "icofont-vehicle-delivery-van",
             title: "Moving from a network",
             imageUrl: "",
-            url: "#",
+            url: "/existingclient",
             description:
                 "With a focus on investment orientated businesses, clients range from substantial national and regional sized firms to niche boutique investment managers and financial planners."
         },
@@ -67,7 +69,7 @@ LinksGrid.defaultProps = {
             icon: "icofont-id",
             title: "Directly authorised",
             imageUrl: "",
-            url: "#",
+            url: "/existingclient",
             description:
                 "Through our in-house training and development, we make sure our staff have the appropriate knowledge, experience or qualifications relevant to their roles and the areas for clients."
         },
@@ -75,7 +77,7 @@ LinksGrid.defaultProps = {
             icon: "icofont-business-man-alt-2",
             title: "Discretionary managers",
             imageUrl: "",
-            url: "#",
+            url: "/existingclient",
             description:
                 "With a focus on investment orientated businesses, clients range from substantial national and regional sized firms to niche boutique investment managers and financial planners."
         }

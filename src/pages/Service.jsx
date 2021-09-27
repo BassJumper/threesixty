@@ -27,7 +27,7 @@ class Service extends Component {
                     </p>"
 	                ctaTitle="Consecuterot adisping elit anm sit."
 	                ctaContent="<p>Sed utlerics edor facuibus risi malesuad</p><p>Sal consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>"
-	                ctaLink="/whoweworkwith"
+	                ctaUrl="/whoweworkwith"
 	                ctaText="Who we work with"
                 /> 
 
@@ -39,37 +39,43 @@ class Service extends Component {
                             icon: "icofont-pen-alt-3",
                             title: "Phasellus posuere, risus",
                             content: "Fusce quis vehicula lectus, eget finibus nulla. Pallentesque fermentum sed odio nec finibus. Lorem ipsum dolor sit amet.",
-                            bgnumber: "1"
+                            bgnumber: "1",
+                            url: "#"
                         },
                         {
                             icon: "icofont-pen-alt-3",
                             title: "Fusce quis vehicula",
                             content: "Lisar dia mi ha, eget finibus nulla. Pallentesque fermentum sed odio nec finibus. Lorem ipsum dolor sit amet.",
-                            bgnumber: "2"
+                            bgnumber: "2",
+                            url: "#"
                         },
                         {
                             icon: "icofont-graduate-alt",
                             title: "Vestibulum ut turpis at",
                             content: "Fusce quis vehicula lectus, eget finibus nulla. Pallentesque fermentum sed odio nec finibus. Lorem ipsum dolor sit amet.",
-                            bgnumber: "3"
+                            bgnumber: "3",
+                            url: "#"
                         },
                         {
                             icon: "icofont-headphone-alt-2",
                             title: "Curabitur at era faucibus",
                             content: "Lisar dia mi ha, eget finibus nulla. Pallentesque fermentum sed odio nec finibus. Lorem ipsum dolor sit amet.",
-                            bgnumber: "4"
+                            bgnumber: "4",
+                            url: "#"
                         },
                         {
                             icon: "icofont-test-tube-alt",
                             title: "Interum et maesuada",
                             content: "Fusce quis vehicula lectus, eget finibus nulla. Pallentesque fermentum sed odio nec finibus. Lorem ipsum dolor sit amet.",
-                            bgnumber: "5"
+                            bgnumber: "5",
+                            url: "#"
                         },
                         {
                             icon: "icofont-globe-alt",
                             title: "Curabitur sagittis mi",
                             content: "Lisar dia mi ha, eget finibus nulla. Pallentesque fermentum sed odio nec finibus. Lorem ipsum dolor sit amet.",
-                            bgnumber: "6"
+                            bgnumber: "6",
+                            url: "#"
                         }
                     ]} 
                 />
@@ -82,7 +88,7 @@ class Service extends Component {
 	                ctaTitle="Pellentesque sagittis mauris"
 	                ctaImage={null}
 	                ctaContent="<p>Sed utlerics edor facuibus risi malesuad consuectoreur. Praesent dignissim aliquam quam id faucibus.</p><h4><b style='font-size: 40px; color: #040041;'>£150</b> per month</h4>"
-	                ctaLink="/contactus"
+	                ctaUrl="/contactus"
 	                ctaText="Get in touch"
                     alignCTALeft={true}
                 /> 

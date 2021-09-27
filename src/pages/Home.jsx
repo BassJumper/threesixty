@@ -18,11 +18,11 @@ class Home extends Component {
                 <NavBar />
                 <LandingBanner />
                 <LinksGrid />
-                <InfoBar modClass="thin-strip" />
+                <InfoBar />
                 <Services />
-                <TeamCarousel />
                 <TestimonialsCarousel />
                 <NewsCarousel />
+                <TeamCarousel />
                 <ContactUs />
                 <Footer />
                 <ScrollUpBtn />

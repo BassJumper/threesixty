@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import parse from "html-react-parser";
-import Link from "react-router-bootstrap"
+import { Link } from 'react-router-dom';
 
 export class TwoColumnCTA extends Component {
 	render() {
@@ -10,7 +10,7 @@ export class TwoColumnCTA extends Component {
 			<>
 				<section className="two-column-cta ptb-100">
 					<div className="container">
-						<div className="row">
+						<div className="two-column-cta-row row">
 							{this.props.alignCTALeft ? (<>
 									<div className="col-lg-4 col-md-12 col-sm-12 two-column-cta-block">
 										{this.props.ctaImage && this.props.ctaImage.length > 0 && (
@@ -37,11 +37,11 @@ export class TwoColumnCTA extends Component {
 									{parse(this.props.content)}
 								</div>
 								<div className={"testimonial-cta-inner-block"}>
-									<h3>{this.props.ctaTitle}</h3>
+									<h3>{this.props.ctaTitle} + {this.props.ctaUrl}</h3>
 									<div>
 										{parse(this.props.ctaContent)}
 									</div>
-									<Link to={`${this.props.ctaUrl}`}><button className="btn btn-primary">{this.props.ctaText}</button></Link>
+									<a href={this.props.ctaUrl}><button className="btn btn-primary">{this.props.ctaText}</button></a>
 								</div></>
 							)}
 						</div>
@@ -58,7 +58,7 @@ TwoColumnCTA.propTypes = {
 	ctaTitle: PropTypes.string,
 	ctaImage: PropTypes.string,
 	ctaContent: PropTypes.string,
-	ctaLink: PropTypes.string,
+	ctaUrl: PropTypes.string,
 	ctaUrl: PropTypes.string,
 	alignCTALeft: PropTypes.bool
 };
@@ -69,7 +69,7 @@ TwoColumnCTA.defaultProps = {
 	ctaTitle: "Consecuterot adisping elit anm sit.",
 	ctaImage: null,
 	ctaContent: "<p>Sed utlerics edor facuibus risi malesuad consuectoreur</p><h4><b style='font-size: 40px; color: #040041;'>£150</b> per month</h4>",
-	ctaLink: "#",
+	ctaUrl: "#",
 	ctaText: "Our services",
 	alignCTALeft: false
 };

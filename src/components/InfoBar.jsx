@@ -15,7 +15,7 @@ export class InfoBar extends Component {
 
 		return (
 			<>
-				<section className={`features-area ptb-100 ${this.props.modClass}`}>
+				<section className={`features-area ptb-100 thin-strip ${this.props.modClass}`}>
 					<div className="container">
 						<div className="row">
 							{items}

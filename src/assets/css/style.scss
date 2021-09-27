@@ -793,61 +793,58 @@ Welcome Area CSS
     background-image: url('/static/media/bg.748fba6c.png'); 
 }
 .single-box {
-    text-align: center;
-    box-shadow: 7px 5px 30px rgba(72, 73, 121, 0.40);
     padding: 30px 20px;
-    background-image: url("/static/media/main-banner1.684cf24e.jpg");
-    box-shadow: inset rgba(255, 255, 255, 0.8) 0 0 0 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: #ffffff;
     position: relative;
+    border-radius: 3px;
+    margin-bottom: 30px;
     transition: 0.4s;
-    cursor: grab;
+    color: #040041;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px 2px #888;
 
     i {
-        position: relative;
-        font-size: 50px;
-        color: #999999;
+        color: #e2bc84a3;
         transition: 0.4s;
+        opacity: 0.2;
+        left: 170px;
+        top: 60px;
+        font-size: 300px;
+        position: absolute
     }
     &:hover i {
         color: $template_color;
     }
     h3 {
-        position: relative;
         font: {
             size: 20px;
             weight: 500;
         }
         margin: {
             bottom: 15px;
-            top: 20px;
+            top: 5px;
         }
     }
     p {
-        position: relative;
         margin-bottom: 0;
     }
-
-    &::before {
-        content: "";
+    .bg-number {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100;
-        height: 100%;
-        display: block;
-        background-image: url("/static/media/main-banner1.684cf24e.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        box-shadow: inset rgba(255, 255, 255, 0.95) 0 0 0 500px;
-        transition: box-shadow 0.3s;
+        right: 20px;
+        top: 10px;
+        font-size: 54px;
+        color: $template_color;
+        opacity: 0.0;
+        transition: 0.4s;
     }
-    &:hover::before {
-        width: 100%;
+
+    &:hover .bg-number {
+        opacity: 1;
     }
+
     &:hover {
         transform: translateY(-10px);
+        box-shadow: 2px 2px 15px 2px rgb(190, 190, 190);
     }
 }
 
@@ -1017,8 +1014,9 @@ Services Area CSS
 .single-services {
     padding: 30px 20px;
     background: #ffffff;
+    color: #040041;
     position: relative;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-bottom: 30px;
     transition: 0.4s;
     overflow: hidden;
@@ -1093,7 +1091,7 @@ Team Area CSS
         position: relative;
         top: -20px;
         padding: 6px 30px;
-        border-radius: 30px;
+        border-radius: 3px;
 
         li {
             display: inline-block;
@@ -1226,7 +1224,7 @@ Features Area CSS
     }
 }
 .features-img img {
-    border-radius: 10px;
+    border-radius: 3px;
 }
 .single-features {
     position: relative;
@@ -1276,7 +1274,7 @@ testimonial Area CSS
     background: #ffffff;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.7);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 3px;
     margin-top: 25px;
     margin-bottom: 10px;
     z-index: 1;
@@ -1366,7 +1364,7 @@ Pricing Area CSS
     text-align: center;
     background-image: url(../../assets/img/bg.png);
     padding-bottom: 35px;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: 7px 5px 30px 0 rgba(72, 73, 121, 0.15);
     border: 1px solid transparent;
     transition: 0.4s;
@@ -1446,7 +1444,7 @@ Blog Area CSS
 .single-blog-post {
     margin-bottom: 30px;
     background-color: white;
-    border-radius: 7px;
+    border-radius: 3px;
     box-shadow: gray 2px 2px 15px 2px;
     height: 500px;
 
@@ -1646,7 +1644,7 @@ Contact Area CSS
     .form-control {
         background: transparent;
         border: 1px solid #eeeeee;
-        border-radius: 5px;
+        border-radius: 3px;
     }
     .list-unstyled li {
         color: red;
@@ -1938,7 +1936,7 @@ Got Top CSS
 
     a {
         &:hover {
-            color: #007bff;
+            color: #040041;
         }
     }
 }
@@ -2107,14 +2105,14 @@ Got Top CSS
 }
 
 .two-column-cta-image {
-    border-radius: 10px;
+    border-radius: 3px;
     margin-bottom: 20px;
 }
 
 .testimonial-cta-inner-content {
     background: #e2e2e2;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     border: 1px solid #e8e8e8;
     box-shadow: #cecece 2px 2px 15px 2px;
     box-shadow: black 1px;
@@ -2146,7 +2144,7 @@ Got Top CSS
 
 .testimonial-cta-content {
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
 
     h3 {
         color: #040041;
@@ -2180,7 +2178,7 @@ Got Top CSS
 
 .two-column-cta-inner-block {
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
     background: rgba(101, 92, 140, 0.14);
 
     h3 {
@@ -2210,7 +2208,7 @@ Got Top CSS
 
 .testimonial-cta-inner-block {
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 3px;
 
     h3 {
         color: #040041;
@@ -2231,6 +2229,10 @@ Got Top CSS
 .alternate-background {
     background-color: #f7debe20;
     background-image: none;
+}
+
+.two-column-cta-row {
+    flex-wrap: nowrap;
 }
 
 .watermark-anchor {

@@ -7,9 +7,12 @@ $value_three: 991px;
 $value_four: 992px;
 $value_five: 1199px;
 $value_six: 1400px;
-$template_color: #3d2f8f;
+$template_color: #040041;
 
 @media only #{$media} and ($feature_max : $value_one) {
+    .two-column-cta-row {
+        flex-wrap: wrap;
+    }
     .testimonial-inner-content {
         flex-wrap: wrap;
     }
@@ -115,6 +118,10 @@ $template_color: #3d2f8f;
 
                 .nav-item {
                     padding: 7px 15px;
+
+                    a {
+                        color:#040041;
+                    }
 
                     .nav-link {
                         color: #2f2e3b;

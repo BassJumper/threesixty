@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
 import NavBar from "../components/NavBar";
 import Banner from "../components/Banner";
-import LinksGrid from "../components/LinksGrid";
 import TestimonialsCarousel from "../components/TestimonialsCarousel";
 import Footer from "../components/Footer";
-import Services from "../components/Services";
-import TeamCarousel from "../components/TeamCarousel";
 import TwoColumnCTA from "../components/TwoColumnCTA";
-import ContactUs from "../components/ContactUs";
 import ScrollUpBtn from "../components/ScrollUpBtn";
-import NewsCarousel from '../components/NewsCarousel';
 import InfoBar from '../components/InfoBar';
-import TestimonialCTA from '../components/TestimonialCTA';
 
 class DummyPage extends Component {
 
@@ -30,7 +24,7 @@ class DummyPage extends Component {
                     content="<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit sed ullamcorper morbi tincidunt ornare massa.</p><p>Amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Placerat orci nulla pellentesque dignissim enim. Sed augue lacus viverra vitae congue eu consequat ac. </p><p>Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Vestibulum lectus mauris ultrices eros. Suspendisse ultrices gravida dictum fusce ut placerat.</p>"
 	                ctaTitle="Consecuterot adisping elit anm sit."
 	                ctaContent="<p>Sed consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>"
-	                ctaUrl="#"
+	                ctaUrl="/ourservices"
 	                ctaText="Our services"
                 /> 
 
@@ -71,7 +65,7 @@ class DummyPage extends Component {
 	                ctaTitle="Consecuterot adisping elit anm sit."
 	                ctaImage={"main-banner3.jpg"}
 	                ctaContent="<p>Sed utlerics eros faucibus risus malesuada consectutor.</p>"
-	                ctaLink="#"
+	                ctaUrl="/whychooseus"
 	                ctaText="Why choose us?"
                     alignCTALeft={true}
                 /> 

@@ -82,7 +82,6 @@ TestimonialCTA.propTypes = {
 	ctaTitle: PropTypes.string,
 	ctaImage: PropTypes.string,
 	ctaContent: PropTypes.string,
-	ctaLink: PropTypes.string,
 	ctaUrl: PropTypes.string,
 	alignCTALeft: PropTypes.bool
 };
