@@ -43,15 +43,7 @@ class NavBar extends Component {
                 >
                     <Container>
                         <Navbar.Brand >
-                            <Link
-                                to="home"
-                                spy={true}
-                                smooth={true}
-                                offset={-70}
-                                duration={800}
-                            >
-                                <img src="https://membership.threesixtyservices.co.uk/images/svg/portal_logo_white.svg" />
-                            </Link>
+                            <a href="/"><img src="https://membership.threesixtyservices.co.uk/images/svg/portal_logo_white.svg" /></a>
                         </Navbar.Brand>
                         <Navbar.Toggle
                             aria-controls="basic-navbar-nav"
