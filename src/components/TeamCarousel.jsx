@@ -20,8 +20,7 @@ export class TeamCarousel extends Component {
                             <a href={item.sociallink3} className={item.socialicon3}></a>
                         </li>
                         <li>
-                            <a href={item.sociallink4} className={item.socialicon4}>
-                            </a>
+                            <a href={item.sociallink4} className={item.socialicon4}></a>
                         </li>
                     </ul>
                   

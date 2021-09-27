@@ -4,7 +4,6 @@ import OwlCarousel from "react-owl-carousel3";
 
 class Partners extends Component {
     render() {
-        // Partner loop start
         const partnerData = this.props.partnersData.map((partner, index) => (
             <div className="col-lg-12 col-md-12" key={index}>
                 <a href={partner.partnerLink}>
@@ -12,7 +11,6 @@ class Partners extends Component {
                 </a>
             </div>
         ));
-        // Partner loop END
 
         return (
             <>

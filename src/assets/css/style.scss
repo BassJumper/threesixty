@@ -89,6 +89,18 @@ button:focus {
     color: #ffffff;
     background-color: #d8c0a28c;
 }
+.article {
+    margin-bottom: 20px;
+    img {
+        width: 100%;
+        border-radius: 3px;
+        height: 270px;
+    }
+    h5 {
+        color: #040041;
+        margin-top: 8px;
+    }
+}
 .btn-signin {
     opacity: 0.3;
     margin-top: -2px;

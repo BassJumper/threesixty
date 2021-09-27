@@ -14,7 +14,6 @@ export class Portfolio extends Component {
                             </h2>
                             <p>{this.props.sectionContent}</p>
                         </div>
-
                         <div className="row">
                             <PopupImage />
                         </div>
