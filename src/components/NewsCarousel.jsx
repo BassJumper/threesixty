@@ -18,6 +18,7 @@ export class NewsCarousel extends Component {
         //     </div>
         // ));
 
+        // TODO: Make into proper LatestArticles component again after demo
         return (
             <>
                 <section id="blog" className="blog-area ptb-100">
@@ -30,16 +31,16 @@ export class NewsCarousel extends Component {
                             <div className="article col-lg-4 col-md-12 col-sm-12">
                                 <a href="/article">
                                     <div className='post-thumbnail'>
-                                        <img src={require('../assets/img/artist.jpg')} />
+                                        <img src={require('../assets/img/article-image1.jpg')} />
                                     </div>
-                                    <h5>How art can lift our dampened spirits</h5>
+                                    <h5>Our team outing to Alton Towers</h5>
                                     <p>24 September 2021</p>
                                 </a>
                             </div>
                             <div className="article col-lg-4 col-md-12 col-sm-12">
                                 <a href="/article">
                                     <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/another3.jpg")}></img>
+                                        <img src={require("../assets/img/article-image2.jpg")}></img>
                                     </div>
                                     <h5>Richard Branson visits threesixty</h5>
                                     <p>22 September 2021</p>
@@ -48,36 +49,36 @@ export class NewsCarousel extends Component {
                             <div className="article col-lg-4 col-md-12 col-sm-12">
                                 <a href="/article">
                                     <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/ecar.png")}></img>
+                                        <img src={require("../assets/img/article-image3.jpg")}></img>
                                     </div>
-                                    <h5>E-Cars no longer a thing of the future</h5>
+                                    <h5>Our guide to regulatory paradise</h5>
                                     <p>19 September 2021</p>
                                 </a>
                             </div>
                             <div className="article col-lg-4 col-md-12 col-sm-12">
                                 <a href="/article">
                                     <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/another4.jpg")}></img>
+                                        <img src={require("../assets/img/article-image5.jpg")}></img>
                                     </div>
-                                    <h5>Our annual staff trip to Florence, Italy</h5>
+                                    <h5>Our expert working from home guide</h5>
                                     <p>14 September 2021</p>
                                 </a>
                             </div>
                             <div className="article col-lg-4 col-md-12 col-sm-12">
                                 <a href="/article">
                                     <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/salad.jpg")}></img>
+                                        <img src={require("../assets/img/article-image4.jpg")}></img>
                                     </div>
-                                    <h5>Working lunches got a lot more spicy</h5>
+                                    <h5>Our Escape Room day, did we make it?</h5>
                                     <p>12 September 2021</p>
                                 </a>
                             </div>
                             <div className="article col-lg-4 col-md-12 col-sm-12">
                                 <a href="/article">
                                     <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/wfh.jpg")}></img>
+                                        <img src={require("../assets/img/article-image6.jpg")}></img>
                                     </div>
-                                    <h5>Our five star working from guide</h5>
+                                    <h5>How to spice up working lunches</h5>
                                     <p>29 August 2021</p>
                                 </a>
                             </div>
@@ -100,7 +101,7 @@ NewsCarousel.defaultProps = {
     items:[
         {
             imglink: "/blogpostdemo",
-            image: require("../assets/img/another2.jpg"),
+            image: require("../assets/img/article-image1.jpg"),
             titlelink: "#",
             title: "Corporate Giants Luftwanga now introduce new GDPR EU Regulations circa 2023",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
@@ -109,7 +110,7 @@ NewsCarousel.defaultProps = {
         },
         {
             imglink: "/blogpostdemo",
-            image: require("../assets/img/artist.jpg"),
+            image: require("../assets/img/article-image1.jpg"),
             titlelink: "#",
             title: "Many are returning to Offices but is this the right move?  We delve into this more.",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
@@ -118,7 +119,7 @@ NewsCarousel.defaultProps = {
         },
         {
             imglink: "/blogpostdemo",
-            image: require("../assets/img/another3.jpg"),
+            image: require("../assets/img/article-image3.jpg"),
             titlelink: "#",
             title: "Home offices are getting a face lift thanks to threesixty services enterprising new approach.",
             content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",

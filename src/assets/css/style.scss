@@ -47,7 +47,7 @@ a {
     outline: 0 !important;
     text-decoration: none !important;
     transition: 0.4s;
-    color: #ffddb1c2;
+    color: #b99c76;
     font-weight: 500;
 
     &:hover {
@@ -92,11 +92,11 @@ button:focus {
 }
 .article {
     margin-bottom: 20px;
+
     img {
-        width: 400px;
         border-radius: 3px;
-        height: 270px;
     }
+
     h5 {
         color: #040041;
         margin-top: 8px;
@@ -104,7 +104,8 @@ button:focus {
 }
 .post-thumbnail {
     overflow: hidden;
-    
+    box-shadow:  2px 2px 15px 2px #ccc;
+
     img {
         transition: 0.8s;
     }
