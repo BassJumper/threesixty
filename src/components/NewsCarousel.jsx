@@ -4,21 +4,21 @@ import PropTypes from 'prop-types';
 export class NewsCarousel extends Component {
     render() {
 
-        // const items = this.props.items.map((item, index ) =>(
-        //     <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
-        //         <div className="single-blog-post">
-        //             <div className="post-thumbnail">
-        //                 <a href={item.imglink}><img src={item.image} alt="blog-img" /></a>
-        //             </div>
-        //             <div className="post-content">
-        //                 <h3><a href={item.titlelink}>{item.title}</a></h3>
-        //                 <a href={item.btnlink} className="read-more">{item.content}</a>
-        //             </div>
-        //         </div>
-        //     </div>
-        // ));
+        const items = this.props.items.map((item, index ) =>(
+            <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
+                <div className="single-blog-post">
+                    <div className="post-thumbnail">
+                        <a href={item.imglink}><img src={item.image} alt="blog-img" /></a>
+                    </div>
+                    <div className="post-content">
+                        <h3><a href={item.titlelink}>{item.title}</a></h3>
+                        <span style={{ marginLeft: "15px", fontWeight: "bold" }}>{item.date}</span>
+                        <a href={item.btnlink} className="read-more">{item.content}</a>
+                    </div>
+                </div>
+            </div>
+        ));
 
-        // TODO: Make into proper LatestArticles component again after demo
         return (
             <>
                 <section id="blog" className="blog-area ptb-100">
@@ -28,60 +28,7 @@ export class NewsCarousel extends Component {
                             <p>{this.props.description}</p>
                         </div>
                         <div className="row justify-content-center">
-                            <div className="article col-lg-4 col-md-12 col-sm-12">
-                                <a href="/article">
-                                    <div className='post-thumbnail'>
-                                        <img src={require('../assets/img/article-image1.jpg')} />
-                                    </div>
-                                    <h5>Our team outing to Alton Towers</h5>
-                                    <p>24 September 2021</p>
-                                </a>
-                            </div>
-                            <div className="article col-lg-4 col-md-12 col-sm-12">
-                                <a href="/article">
-                                    <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/article-image2.jpg")}></img>
-                                    </div>
-                                    <h5>Richard Branson visits threesixty</h5>
-                                    <p>22 September 2021</p>
-                                </a>
-                            </div>
-                            <div className="article col-lg-4 col-md-12 col-sm-12">
-                                <a href="/article">
-                                    <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/article-image3.jpg")}></img>
-                                    </div>
-                                    <h5>Our guide to regulatory paradise</h5>
-                                    <p>19 September 2021</p>
-                                </a>
-                            </div>
-                            <div className="article col-lg-4 col-md-12 col-sm-12">
-                                <a href="/article">
-                                    <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/article-image5.jpg")}></img>
-                                    </div>
-                                    <h5>Our expert working from home guide</h5>
-                                    <p>14 September 2021</p>
-                                </a>
-                            </div>
-                            <div className="article col-lg-4 col-md-12 col-sm-12">
-                                <a href="/article">
-                                    <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/article-image4.jpg")}></img>
-                                    </div>
-                                    <h5>Our Escape Room day, did we make it?</h5>
-                                    <p>12 September 2021</p>
-                                </a>
-                            </div>
-                            <div className="article col-lg-4 col-md-12 col-sm-12">
-                                <a href="/article">
-                                    <div className='post-thumbnail'>
-                                        <img src={require("../assets/img/article-image6.jpg")}></img>
-                                    </div>
-                                    <h5>How to spice up working lunches</h5>
-                                    <p>29 August 2021</p>
-                                </a>
-                            </div>
+                            {items}
                         </div>
                     </div>
                 </section>
@@ -97,32 +44,35 @@ NewsCarousel.propTypes = {
 }
 NewsCarousel.defaultProps = {
     title: "Already a threesixty client?",
-    description: "Here are a handful of our most recent articles which of course are completely made up for demo purposes",
+    description: "Vivamus id pharetra ligula. Nullam gravida euismod nibh nec commodo. Donec tincidunt odio in neque iaculis porta.",
     items:[
         {
-            imglink: "/blogpostdemo",
+            imglink: "/article",
             image: require("../assets/img/article-image1.jpg"),
             titlelink: "#",
-            title: "Corporate Giants Luftwanga now introduce new GDPR EU Regulations circa 2023",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            title: "Our team outing to Alton Towers",
+            date: "24 September 2021",
+            content: "Nam aliquet imperdiet tellus vel elementum. Fusce fermentum tellus malesuada augue ultricies pharetra. Aliquam non mi sapien. Vestibulum at venenatis nisl. Vivamus non urna scelerisque, aliquam velit tincidunt...",
             btnlink: "#",
             btnname: "Read more",
         },
         {
-            imglink: "/blogpostdemo",
-            image: require("../assets/img/article-image1.jpg"),
+            imglink: "/article",
+            image: require("../assets/img/article-image2.jpg"),
             titlelink: "#",
-            title: "Many are returning to Offices but is this the right move?  We delve into this more.",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            title: "Richard Branson visits threesixty",
+            date: "22 September 2021",
+            content: "Ut velit felis, imperdiet at sodales sit amet, vehicula vel arcu. Suspendisse nec elit lacinia, volutpat diam non, gravida lectus. Vivamus semper scelerisque magna, et scelerisque dui ullamcorper at. Cras vitae ornare quam...",
             btnlink: "#",
             btnname: "Read more",
         },
         {
-            imglink: "/blogpostdemo",
+            imglink: "/article",
             image: require("../assets/img/article-image3.jpg"),
             titlelink: "#",
-            title: "Home offices are getting a face lift thanks to threesixty services enterprising new approach.",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+            title: "Our guide to regulatory paradise",
+            date: "19 September 2021",
+            content: "Quisque sagittis sapien ut fermentum imperdiet. Cras sagittis tortor ut tincidunt laoreet. Mauris vel fringilla mi. Vestibulum consectetur laoreet purus, id mollis elit faucibus quis. Aliquam non mi sapien...",
             btnlink: "#",
             btnname: "Read more",
         }

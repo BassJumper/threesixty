@@ -4,7 +4,7 @@ import Banner from "../components/Banner";
 import TestimonialsCarousel from "../components/TestimonialsCarousel";
 import Footer from "../components/Footer";
 import ScrollUpBtn from "../components/ScrollUpBtn";
-import NewsCarousel from '../components/NewsCarousel';
+import LatestArticles from '../components/LatestArticles';
 
 class Blog extends Component {
 
@@ -18,7 +18,7 @@ class Blog extends Component {
                     description={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Velit sed ullamcorper morbi tincidunt ornare massa. Dansit sed happiness morbi tincidunt ornare massa."} 
                 />
 
-                <NewsCarousel />
+                <LatestArticles />
 
                 <TestimonialsCarousel 
                     title="What our clients say"
